@@ -55,7 +55,7 @@
 <body>
 
     <audio id="backgroundMusic" loop>
-        <source src="music/new_year2025.mp3" type="audio/mpeg">
+        <source src="music/new_year2025.mp4" type="audio/mpeg">
 
     </audio>
 
@@ -137,17 +137,17 @@
     
 
     backgroundMusic.addEventListener('loadedmetadata', function() {
-        backgroundMusic.volume = 0.01;
+        backgroundMusic.volume = 0.03;
     });
     
 
     backgroundMusic.addEventListener('play', function() {
-        backgroundMusic.volume = 0.01; 
+        backgroundMusic.volume = 0.03; 
     });
 
     window.addEventListener('load', function() {
 
-        backgroundMusic.volume = 0.01; 
+        backgroundMusic.volume = 0.03; 
         backgroundMusic.play().catch(error => {
             console.log("Автовоспроизведение заблокировано. Музыка включится после клика.");
         });
